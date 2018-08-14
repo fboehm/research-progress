@@ -52,6 +52,18 @@ I should, this week, write code to perform the pleiotropy v separate QTL tests f
 
 ### Lit reviews (reading & writing)
 
+This week, I wrote notes on three articles. They are in separate google docs.
+
+1. Lander & Botstein 1989.
+
+2. Sen & Churchill 2001.
+
+3. Sen, Satagopan, and Churchill 2005.
+
+My notes on Lander & Botstein are incomplete. I need to finish writing notes on the second half of that article. It's rich in citing earlier QTL studies & methods. I have added many articles to my to-read list because they are cited by L & B.
+
+My notes on the other two articles are more complete. 
+
 
 
 

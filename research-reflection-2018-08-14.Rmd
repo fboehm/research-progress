@@ -1,0 +1,65 @@
+---
+title: "Reflection on the week in research, August 14 2018"
+author: "Frederick Boehm"
+date: "8/14/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Motivation
+
+This is my first (of presumably many) weekly reflections on research progress. I sometimes feel that I proceed too slowly, so I want to keep close records of what I do accomplish and make regular, incremental plans for progress.
+
+## Overview
+
+For the past 7 days, I aimed to work on
+
+1. writing of chapter 1 of my thesis (which will become a review article eventually)
+2. code writing for Keller 2018 RNA data analysis
+3. writing reviews of prominent research articles (with the goal of using them in my chapter 1 of thesis)
+4. R package development for `qtl2pleio`
+
+Let's review what I did.
+
+### Chapter 1 writing
+
+I created new documents in google drive that hold some of my draft text.
+
+a. ch1 - timeline for mapping populations availability: the goal of this document (on google drive) is to chart the evolution over time of increasingly complex mapping populations. While F2 and backcross have been used since the start of qtl mapping studies, RILs and MPP are subsequent developments born of necessity (primarily higher mapping resolution)
+
+b. ch1 - traditional QTL mapping: the goal of this document (also on google drive) is to describe, in non-technical language, early methods for QTL mapping. I've mostly focused on Lander & Botstein 1989, my description which is currently incomplete. I want to read Sax 1923 and other articles that Lander & Botstein 1989 cite, as I want to be clearer about the course of development for QTL mapping methods.
+
+c. ch1 - DO mice: the goal of this document (on google drive) is to discuss the DO population. What is its motivation, How was it created (bred), What has it achieved so far, Why do higher generation numbers have greater mapping resolution. I've made some notes on these ideas, but I don't yet have a cohesive text.
+
+
+
+
+### Keller analysis
+
+The goal in looking at the Keller 2018 RNA data is to illustrate the value of my test of pleiotropy v separate QTL. I realize that in a study like Keller 2018, the investigators really aren't as interested in pleiotropy v separate QTL; instead, they're focused on identifying instancese of mediation. However, analyzing their data may still suffice to illustrate the usefulness of pleiotropy v separate QTL. 
+
+My progress to date is recorded in the file 'keller-2018-chr2-hotspot-analysis.Rmd'. It is saved on github at: https://github.com/fboehm/keller-2018-rna-analysis/blob/27a0d9d982c4728e1e830092c7a23bb36e869413/Rmd/keller-2018-chr2-hotspot-analysis.Rmd
+
+(Note that the link above is to the version that's available on August 14, 2018.)
+
+I state, in the Rmd file that's linked above, that I want to focus on the chromosome 2 hotspot first, and that I'll prioritize those traits with higher LOD scores. The local gene also has an eQTL, so it will be involved in all pairwise tests of pleiotropy v separate QTL on chromosome 2.
+
+I should, this week, write code to perform the pleiotropy v separate QTL tests for one pair of traits (ie, a nonlocal gene- with high lod score - paired with the local gene). It will also be worth comparing the collection of pairwise analyses for chr 2 hotspot traits with the mediation test results. Another task is to identify if the mediation test results are available in the datadryad Keller 2018 .Rdata file. 
+
+
+### Lit reviews (reading & writing)
+
+
+
+
+### qtl2pleio development
+
+I have done nothing on this task this week. I am more motivated to take it on, now that I've received an email from Brian Yandell in which he encounters difficulties in using it. I need to understand what Brian is doing in his analysis and why it's incompatible with qtl2pleio code.
+
+I also need to expand my code coverage for qtl2pleio. Included in this task is to ensure that my introduction of C++ code into qtl2pleio hasn't introduced errors.
+
+
+
